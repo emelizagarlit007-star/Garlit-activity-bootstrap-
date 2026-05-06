@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Family - Domestic Cats</title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .hero {
+            background-color: #fef5e7;
+            padding: 70px 0;
+        }
+        .section-title {
+            color: #8B4513;
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            height: 100%;
+        }
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+        .fact-box {
+            background-color: #fff8e1;
+            border-left: 5px solid #f39c12;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #5D4037;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-link.active {
+            color: #f39c12 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🐱 Cat Family</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#species">Species</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facts">Fun Facts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 text-dark">Welcome to the World of Cats</h1>
+            <p class="lead text-secondary">Discover amazing facts, types, and characteristics of the Felidae family</p>
+            <a href="#species" class="btn btn-warning btn-lg mt-3">Explore Species</a>
+        </div>
+    </section>
+
+    <!-- About Section - Using Grid -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">What is the Cat Family?</h2>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Wild and Domestic Cats" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="text-brown mb-3">About Felidae</h3>
+                    <p>The cat family, scientifically known as <strong>Felidae</strong>, is a group of carnivorous mammals. This family includes both domestic cats and wild species like lions, tigers, leopards, cheetahs, and jaguars.</p>
+                    <p>All members of this family share common features: they have sharp claws, strong jaws, excellent eyesight and hearing, and are skilled hunters. They are found all over the world, except in Antarctica and some isolated islands.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-sm-6 mb-2">
+                            <strong>Group Name:</strong> Felidae
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <strong>Diet:</strong> Carnivores
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <strong>Habitat:</strong> Global (except Antarctica)
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <strong>Claws:</strong> Retractable (except Cheetah)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Species Section - Fixed Images & Grid Layout -->
+    <section id="species" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Domestic Cat Family</h2>
+            <div class="row">
+                <!-- Mommy Cat -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Mommy Cat">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">Mommy Cat</h5>
+                            <p class="card-text">The caring mother, attentive and loving to her kittens.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Daddy Cat -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Daddy Cat">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">Daddy Cat</h5>
+                            <p class="card-text">The strong and protective father who watches over the family.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brother Cat -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Brother Cat">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">Brother Cat</h5>
+                            <p class="card-text">A playful and curious young cat, always exploring and learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sister Cat -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Sister Cat">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">Sister Cat</h5>
+                            <p class="card-text">Kind and gentle, she loves cuddles and naps with the family.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Baby Cat -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Baby Cat">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">Baby Cat</h5>
+                            <p class="card-text">The adorable kitten, just learning about the world with wide eyes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section - Grid Layout -->
+    <section id="facts" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Fun Facts About Cats</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="fact-box">
+                                <h5>🐾 Sharp Senses</h5>
+                                <p>Cats have a very strong sense of smell and hearing. They can hear sounds that humans cannot hear, which helps them hunt for food.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="fact-box">
+                                <h5>🐾 Claws</h5>
+                                <p>Most cats have retractable claws – this means they can pull them in when walking so they stay sharp, and pull them out when climbing or hunting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="fact-box">
+                                <h5>🐾 Night Vision</h5>
+                                <p>Cats can see much better in the dark than humans. Their eyes have a special layer that reflects light, helping them see even when it is dim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="fact-box">
+                                <h5>🐾 Purring</h5>
+                                <p>Both domestic cats and some wild cats can purr. They usually do this when they are happy or comfortable, but they also purr when they are sick or hurt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="fact-box">
+                                <h5>🐾 Flexibility</h5>
+                                <p>Cats have very flexible bodies. They can twist and turn easily, which is why they are good at jumping and landing on their feet when they fall.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-1">&copy; 2024 All About Cats - The Cat Family</p>
+                    <p class="small">Created using Bootstrap Grid System | Designed with love for felines 🐱</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+                      </html>
+                      
